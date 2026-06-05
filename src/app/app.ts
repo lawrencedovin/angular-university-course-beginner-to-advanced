@@ -9,4 +9,8 @@ import { RouterOutlet } from '@angular/router';
 })
 export class App {
   protected readonly title = signal('angular-university-course-beginner-to-advanced');
+
+  onKeyUp(newTitle: string) {
+    this.title.set(newTitle);
+  }
 }
